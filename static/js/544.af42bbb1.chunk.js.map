@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/544.af42bbb1.chunk.js","mappings":"+MAEe,SAASA,IACtB,OAAO,6EACR,C","sources":["pages/Home/Home.jsx"],"sourcesContent":["import React from 'react';\n\nexport default function Homepage() {\n  return <div>Welcome to Number book, please LogIn or Register</div>;\n}\n"],"names":["Homepage"],"sourceRoot":""}
