@@ -4,7 +4,7 @@ import {
   ContactsList,
   ContactsItem,
   RemoveContactButton,
-} from './Phonebook.styled';
+} from '../PhonebookTheme.styled';
 import { IconContext } from 'react-icons';
 import { RiDeleteBack2Line } from 'react-icons/ri';
 import { toast } from 'react-toastify';

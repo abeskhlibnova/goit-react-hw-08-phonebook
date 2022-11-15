@@ -2,7 +2,7 @@ import React from 'react';
 import { getFilter } from 'redux/filter/filter-selectors';
 import { useSelector, useDispatch } from 'react-redux';
 import { setFilter } from 'redux/filter/filter-slice';
-import { FilterTitle, FilterInput } from './Phonebook.styled';
+import { FilterTitle, FilterInput } from '../PhonebookTheme.styled';
 
 export default function Filter() {
   const filter = useSelector(getFilter);

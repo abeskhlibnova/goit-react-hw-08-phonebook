@@ -39,7 +39,7 @@ export const Label = styled.label`
   z-index: 1000;
 `;
 
-export const LoginButton = styled.button`
+export const RegisterButton = styled.button`
   margin-top: 20px;
   padding: 10px;
   border: 2px solid #fff;

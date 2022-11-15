@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const PhonebookBox = styled.div`
   position: relative;
-  /* width: 100%; */
-  /* min-height: 100vh; */
   background-color: #fafafa;
   overflow: hidden;
   display: flex;
@@ -12,24 +17,23 @@ export const PhonebookBox = styled.div`
 `;
 
 export const Form = styled.div`
-  /* width: 100%; */
-  max-width: 1080px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 `;
 export const PhonebookContainer = styled.div`
+  width: 70%;
   background-color: #1abc9c;
   padding: 30px;
 `;
 
 export const ContactFilterForm = styled.div`
+  align-items: flex-start;
   color: #1abc9c;
+
   padding: 30px;
+  margin-right: 70px;
 `;
 export const PhonebookTitle = styled.h1`
   font-size: 40px;
@@ -40,6 +44,7 @@ export const PhonebookTitle = styled.h1`
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
   margin-bottom: 20px;
 `;
 export const Input = styled.input`
@@ -68,6 +73,7 @@ export const Label = styled.label`
 `;
 
 export const AddContactButton = styled.button`
+  margin-left: 10px;
   margin-bottom: 20px;
   padding: 10px;
   border: 2px solid #fff;
@@ -113,6 +119,7 @@ export const RemoveContactButton = styled.button`
 export const FilterTitle = styled.p`
   font-size: 20px;
   margin-bottom: 10px;
+  margin-left: 20px;
 `;
 
 export const FilterInput = styled.input`

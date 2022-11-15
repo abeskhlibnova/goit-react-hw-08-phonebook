@@ -1,9 +1,9 @@
 import { useAuth } from 'hooks/useAuth';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { refreshUser } from 'redux/auth/operations';
+import { refreshUser } from 'redux/auth/auth-operations';
 import { UserRoutes } from 'UserRoutes';
-import { PhonebookBox } from './components/Phonebook.styled';
+import { PhonebookBox } from './components/PhonebookTheme.styled';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -21,7 +21,7 @@ export const App = () => {
       <PhonebookBox>
         <UserRoutes />
       </PhonebookBox>
-      <ToastContainer autoClose={2000} theme="light" />
+      <ToastContainer autoClose={1500} theme="light" />
     </>
   );
 };

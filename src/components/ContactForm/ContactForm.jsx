@@ -8,11 +8,10 @@ import {
   AddContactButton,
   PhonebookTitle,
   PhonebookContainer,
-} from './Phonebook.styled';
+} from '../PhonebookTheme.styled';
 import { useSelector, useDispatch } from 'react-redux';
 import { getContacts } from 'redux/contacts/contacts-selectors';
 import { toast } from 'react-toastify';
-// import { addContact } from 'redux/contacts/contacts-slice';
 import { addContact } from 'redux/contacts/contacts-operations';
 
 export default function ContactForm() {
@@ -64,6 +63,7 @@ export default function ContactForm() {
             required
             value={name}
             onChange={event => setName(event.target.value)}
+            placeholder="Enter name"
           />
         </InputWrapper>
         <InputWrapper>
@@ -77,6 +77,7 @@ export default function ContactForm() {
             required
             value={number}
             onChange={event => setNumber(event.target.value)}
+            placeholder="Enter number +000..."
           />
         </InputWrapper>
         <AddContactButton type="submit">Add contact</AddContactButton>

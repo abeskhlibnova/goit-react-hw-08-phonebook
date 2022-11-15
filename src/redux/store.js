@@ -9,11 +9,10 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-// import rootReducer from './rootReducer';
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from './auth/slice';
-import contactsSlice from './contacts/contacts-slice';
-import filterSlice from './filter/filter-slice';
+import { authReducer } from './auth/auth-slice';
+import { contactsReducer } from './contacts/contacts-slice';
+import { filterReducer } from './filter/filter-slice';
 
 const authPersistConfig = {
   key: 'auth',
@@ -24,8 +23,8 @@ const authPersistConfig = {
 export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
-    contacts: contactsSlice,
-    filter: filterSlice,
+    contacts: contactsReducer,
+    filter: filterReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

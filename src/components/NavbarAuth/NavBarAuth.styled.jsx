@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-// export const NavbarMenuUl = styled.ul`
-//   display: flex;
-//   flex-wrap: nowrap;
-//   margin-left: 40px;
-// `;
+export const WrapperNav = styled.div`
+  background-color: #1abc9c;
+`;
 
-// export const NavbarItems = styled.li`
-//   padding-right: 30px;
-// `;
-
+export const NavMenu = styled.nav`
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+`;
 export const StyledNavLink = styled(NavLink)`
   color: #fff;
   font-size: 30px;
+  margin-right: 20px;
 
   &:hover {
     color: yellow;
