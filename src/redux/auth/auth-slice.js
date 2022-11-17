@@ -30,7 +30,10 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
         toast.success('Welcome to Numberbook!');
       })
-      .addCase(logIn.rejected)
+      .addCase(logIn.rejected, (state, action) => {
+        state.error = action.payload;
+        toast.error('Email or password is incorrect! Please, check inputs!');
+      })
       .addCase(logOut.fulfilled, state => {
         state.user = { name: null, email: null };
         state.token = null;
